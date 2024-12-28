@@ -44,6 +44,63 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "donores",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "foo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "fooT",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "get",
 				"outputs": [
@@ -105,11 +162,11 @@
 	},
 	"sources": {
 		"contracts/4_solidityExample.sol": {
-			"keccak256": "0x1f1660611f646e240ba867591e1fc5aa6059b95bb5ca6505bdac2ee45e9676c9",
+			"keccak256": "0x4b715b893cd94242dbdcdd72710865546e69a08c3ddeb8a03af79d7cde0e9bab",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://786e1dec179c49545beb95e942532389824b471b6ceae8b93f04fe994a91507b",
-				"dweb:/ipfs/QmNvNbSdcs1feH2sdcxH3o2uFf2nfkfbdto236MEsbyZKQ"
+				"bzz-raw://e79ccc6bc57a1f63b6d1ab5b0634ae557029fb03abec5a6c689ab1f7e92f7181",
+				"dweb:/ipfs/QmZbY3RdgjX66ya6KEPPsf5C7wvteYFgqBpBLZj52k8WzQ"
 			]
 		}
 	},
