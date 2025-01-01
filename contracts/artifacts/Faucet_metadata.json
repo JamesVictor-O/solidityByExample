@@ -1,0 +1,63 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_withdrawAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "withDraw",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/10_Faucet.sol": "Faucet"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/10_Faucet.sol": {
+			"keccak256": "0x2ed631202f3461d8a7cf92733be0b4dc408d4ce949fa6011f0bc8a62f672ef1d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://70adae1f81ef4f29c3728a54d981a487f029aff1e37f5ace5297edf32821056e",
+				"dweb:/ipfs/QmZSR2jwp2698XTBnqxwWUX8jFQT7EzYkY7JqwG5PJGRVc"
+			]
+		}
+	},
+	"version": 1
+}
