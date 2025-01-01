@@ -11,6 +11,32 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "changeOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					}
+				],
+				"name": "decrement",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "locked",
 				"outputs": [
@@ -78,11 +104,11 @@
 	},
 	"sources": {
 		"contracts/10_FunctionModifier.sol": {
-			"keccak256": "0x712c25c378edcfb28c7939d5e7872dccc255a586a34fd5ffc56746daeb0b474d",
+			"keccak256": "0x7f8900ebf614fbe641fc934a948617714b4d5ecd240b708d551bc76ff1208cf3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2662327180278363a0f6cce845a6cad40870582a071cacbc14cb2183592969dc",
-				"dweb:/ipfs/QmUCyooz9L9728Z7Pi6ky11nrHfSDGWT1w4sk515aCM7fW"
+				"bzz-raw://65dd01ab1c26b5d3bf3b8a270181de685da3c19a84826db4d6c74fcbffa353df",
+				"dweb:/ipfs/QmdndwAQgKZyGA1tPPdTNZF71fvJ5gHgKrR4WUkbJMNWbM"
 			]
 		}
 	},
