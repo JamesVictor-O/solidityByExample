@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/13_Interface.sol": "Name"
+			"contracts/13_Interface.sol": "ICo"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"contracts/13_Interface.sol": {
-			"keccak256": "0xaace685bdac73be2c29d9c9889ca09cc72cc6ba3d9e8fc09a57bfc9decbec7e2",
+			"keccak256": "0x145bd10cc2a6ed47e03f0872918d88f01f8e8096d395d1e86e6b10574c47d30b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://502bca823858b031ecf86b370f258eaedc5e22dcaf8cb6c4aca88ec0bf7148c9",
-				"dweb:/ipfs/QmfNH2TswW1seeacw8e7ErSTRrsJQeKZ2BcDrHycR1aqiN"
+				"bzz-raw://3326b7f22d64117ad354add63de5dd63d171867c80689c5bd8250152201acdfc",
+				"dweb:/ipfs/QmZNxPsam3iJSg7RX4VxgmcxdfnLdL3MQ8brUoCyaTgvSU"
 			]
 		}
 	},

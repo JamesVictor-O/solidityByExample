@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/13_Interface.sol": "Name"
+			"contracts/13_Interface.sol": "ICalc"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"contracts/13_Interface.sol": {
-			"keccak256": "0xaace685bdac73be2c29d9c9889ca09cc72cc6ba3d9e8fc09a57bfc9decbec7e2",
+			"keccak256": "0xde81e7daa9784502122941b64e75e55f5271ba13bdb48a9511e7518a851e7cf8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://502bca823858b031ecf86b370f258eaedc5e22dcaf8cb6c4aca88ec0bf7148c9",
-				"dweb:/ipfs/QmfNH2TswW1seeacw8e7ErSTRrsJQeKZ2BcDrHycR1aqiN"
+				"bzz-raw://4e0c5d35b6acb76c2138401f574a8fa3acc04a34428bf8ff0c953133a9a80685",
+				"dweb:/ipfs/QmePyy7ZwPiwULNCpXd1BEAmTu4xYZBD4Ec7EWmi463A8S"
 			]
 		}
 	},
