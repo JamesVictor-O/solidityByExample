@@ -11,6 +11,25 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Received",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -38,9 +57,31 @@
 				"name": "availableRooms",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "roomPrice",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAvailable",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "roomCapacity",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Hostel.Room[]",
 						"name": "",
-						"type": "uint256"
+						"type": "tuple[]"
 					}
 				],
 				"stateMutability": "view",
@@ -128,6 +169,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_roomId",
+						"type": "uint256"
+					}
+				],
+				"name": "cancelBooking",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "deposit",
 				"outputs": [],
@@ -145,6 +199,25 @@
 				"name": "removeRoom",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "roomIds",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -205,6 +278,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"stateMutability": "payable",
 				"type": "receive"
 			}
@@ -237,11 +323,11 @@
 	},
 	"sources": {
 		"contracts/10_HouseBooking.sol": {
-			"keccak256": "0x87b3edb5b9e74ad0b3c7e856e86f7c4248bee1f9fb5741a48dd69140a517dd74",
+			"keccak256": "0x244061e01dc670562bcfa5dc3c8a2f6ce6550444d90c7db22677e88a7c497f8d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://74ae5eea4078d12dd1527f0c3f9264bac1cf8d22e14adfdc42d6d5fb83420fb7",
-				"dweb:/ipfs/QmVezyaQ7JkMqx2XZhsbXq2odzBcPLK9TbnjHvXZpDs2aJ"
+				"bzz-raw://c2024b428d762853f792a64699fb7621d97ab4de669ba2c32f3db06e3df14a73",
+				"dweb:/ipfs/QmWtJ4VmWaKwLUbxUwDSADqYD6BoaMdK85FRb8913hkBnA"
 			]
 		}
 	},

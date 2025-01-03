@@ -4,14 +4,14 @@ pragma solidity ^0.8.26;
 contract Hostel{
 
     address payable manager;
-    uint public availableRooms=0;
+    // uint public availableRooms=0;
 
 
     constructor(){
         manager= payable (msg.sender);
     }
 
-    // Room
+    // Room struct
     struct Room{
         uint id;
         uint roomPrice;
@@ -20,8 +20,9 @@ contract Hostel{
     }
 
     mapping (uint => Room ) public rooms;
+    uint[] public roomIds;
     
-    // Booking
+    // Booking struct
 
     struct Booking{
         address customer;
@@ -35,6 +36,9 @@ contract Hostel{
     mapping (uint => Booking) public bookings;
     mapping (address => uint) public balances;
 
+
+     
+
     // only owner can add rooms
     modifier  onlyOwner(){
         require(msg.sender == manager, "Not the manager");
@@ -43,7 +47,7 @@ contract Hostel{
     // only customers
 
     modifier  notOwners(){
-        require(msg.sender != manager, "Not owners");
+        require(msg.sender != manager, "You can't Book a room as an owner");
         _;
     }
     // book only if room is available
@@ -55,6 +59,7 @@ contract Hostel{
     // function for adding rooms for manager/owner
     function addRoom(uint _i, uint _roomPrice,uint _roomCapacity) public onlyOwner{
          rooms[_i]=Room(_i,_roomPrice,false,_roomCapacity);
+         roomIds.push(_i);
     }
 
     // function to remove rooms 
@@ -93,14 +98,78 @@ contract Hostel{
 
     }
 
+    // function for booking cancelation
+
+    function cancelBooking(uint _roomId) public notOwners{
+
+        Booking storage  booking = bookings[_roomId];
+        //  checking if the room was booked and the msg.sender was the one who booked it
+        require(booking.isConfiremd, "Booking does not exist or is already canceled");
+        require(msg.sender == booking.customer, "Only the customer can cancel this booking");
+      
+        // amount to be refunded
+        uint refundAmount = booking.amountPaid;
+          
+        //    checking if the contract has the amount to be refunded
+          require(address(this).balance >= refundAmount  ,"Insufficient Amount in contract balance");
+
+
+            // tranfering funds to owner
+          (bool success,)=msg.sender.call{value: refundAmount}("");
+
+          require(success, "Trasfer failed");
+        //    deleting the booking from the booking mapping
+          delete bookings[_roomId];
+
+        // updating the room status
+          rooms[_roomId].isAvailable=true;
+
+    }
+    
+   
    // deposit function   
     function deposit() public payable {
        require(msg.value > 0, "value must be greater than 0");
        balances[msg.sender] += msg.value;
     }
 
-    receive() external payable { }
-    // function withdrawFunds() public payable  onlyOwner{
 
-    // }
+    // function for checking available rooms 
+
+    function availableRooms() public view returns (Room[] memory){
+         uint count = 0;
+
+         for(uint i=0; i < roomIds.length; i++){
+            if(rooms[roomIds[i]].isAvailable){
+                count ++;
+            }
+         }
+
+
+        Room[] memory roomsAvailable = new Room[](count);
+        uint index=0;
+
+           for (uint i = 0; i < roomIds.length; i++) {
+            if (rooms[roomIds[i]].isAvailable) {
+                 roomsAvailable[index] = rooms[roomIds[i]];
+                index++;
+            }
+         }
+
+        return  roomsAvailable;
+
+    }
+
+    event Received (address sender, uint amount);
+
+    receive() external payable { 
+        emit Received(msg.sender, msg.value);
+    }
+    
+    // withdrawal function
+   function withdraw(uint _amount) public onlyOwner{
+      (bool success,)= msg.sender.call{value: _amount}("");
+       
+      require(success, "Transfer Faild");
+   }
 }
