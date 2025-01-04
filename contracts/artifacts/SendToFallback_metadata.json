@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "callFallback",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "transferToFallback",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/18_SendingEthers.sol": "SendToFallback"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/18_SendingEthers.sol": {
+			"keccak256": "0x6f1736b3e54997fc3ad8ca0af731d0f8624977bfca4d42dd2fcb22297cc47e49",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aaceda3bde25da30f566561ec28e410740c5885f0cfcde943283e039835db7cb",
+				"dweb:/ipfs/QmcX8mQ3gwb2KTvRD3bWGvadKm4AJZj4ewSVM5rntjjeDD"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "signer",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes",
+						"name": "sig",
+						"type": "bytes"
+					}
+				],
+				"name": "verifySig",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/16_DigitalSignature.sol": "digitalSignature"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/16_DigitalSignature.sol": {
+			"keccak256": "0x12c949e2de16ed7f4a779e859133427c6dc844491e3279a609ff65d992a8b2ed",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5c965304328808c4b1a69bdd3c8c059fde98cb9e41fbf07bc3ee2acc8065ba69",
+				"dweb:/ipfs/QmQWSK488HCHMXu52tA8NCmFjSYJT5xdV49BMBS1an8EQ6"
+			]
+		}
+	},
+	"version": 1
+}

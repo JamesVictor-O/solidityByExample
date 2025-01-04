@@ -36,7 +36,7 @@ contract CrowdFunding{
          totalFunds += msg.value;
     }
 
-    function withdrawFunds() public payable onlyOwner {
+    function withdrawFunds() public  onlyOwner {
         (bool sucsses,)= owner.call{value: address(this).balance}("");
         require(sucsses, "Transfer failed");
     }
