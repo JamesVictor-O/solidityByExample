@@ -45,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/19_Delegatecall.sol": "Child"
+			"contracts/19_Delegatecall.sol": "ChildContract"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -60,11 +60,11 @@
 	},
 	"sources": {
 		"contracts/19_Delegatecall.sol": {
-			"keccak256": "0xaa8a7e19e3c9c93014cd82a4eb4cd753f0d80e528477b3491bb6221a803ddcc9",
+			"keccak256": "0x2855410c4ceafa656c6dbe085905a64aa7694cd3819228d1fdd3f7b70feffadf",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://df6565d7b9fb5e193ff785b34ccfec22079cf6c759d7f0f66451a2ed588616ad",
-				"dweb:/ipfs/QmV8m86X7YiLBtyKNzk2KficrYPac8PeVTVQqXMbBLXQRj"
+				"bzz-raw://b80229df029d96a4d42bcef61fa6a341f605524ec3284866648d95ca8c5963f3",
+				"dweb:/ipfs/QmTE1NcbnEDz1e8m4w5yxCLRKkbwnWNhE97usQYMyMtofz"
 			]
 		}
 	},

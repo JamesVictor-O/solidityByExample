@@ -63,9 +63,13 @@ contract SendToFallback{
     }
 }
 
-contract Receiver{
-    event Recevied(address caller, uint amount, string message);
-// 
+
+
+
+
+
+contract Reciver{
+     event Recevied(address caller, uint amount, string message);
     fallback() external payable { 
         emit Recevied(msg.sender, msg.value, "payment for nfts");
     }
@@ -78,8 +82,8 @@ contract Receiver{
 
         return  _x + 1;
     }
-
 }
+
 
 contract Caller{
     event Response(bool success, bytes data);

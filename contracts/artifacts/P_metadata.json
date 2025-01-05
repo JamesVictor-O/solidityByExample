@@ -21,12 +21,17 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "logicContract",
+						"type": "address"
+					},
+					{
 						"internalType": "uint256",
-						"name": "_number",
+						"name": "_newNumber",
 						"type": "uint256"
 					}
 				],
-				"name": "setNumber",
+				"name": "useDelegateCall",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -45,7 +50,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/19_Delegatecall.sol": "Child"
+			"contracts/19_Delegatecall.sol": "P"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -60,11 +65,11 @@
 	},
 	"sources": {
 		"contracts/19_Delegatecall.sol": {
-			"keccak256": "0xaa8a7e19e3c9c93014cd82a4eb4cd753f0d80e528477b3491bb6221a803ddcc9",
+			"keccak256": "0x9207b1cbae44b629341880b398ad1883dd0285e7ca322a5494a9d20ad5e94cac",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://df6565d7b9fb5e193ff785b34ccfec22079cf6c759d7f0f66451a2ed588616ad",
-				"dweb:/ipfs/QmV8m86X7YiLBtyKNzk2KficrYPac8PeVTVQqXMbBLXQRj"
+				"bzz-raw://9e7a392e0437f3d59bba6092bb508a17fe000aaf42eabbbff3202c1219f5c3ef",
+				"dweb:/ipfs/QmUdtcThUn6tiWPs8MuZN6NSQjryX6fJ9MxmFpyY9KJWvW"
 			]
 		}
 	},

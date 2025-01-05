@@ -1,10 +1,37 @@
 {
 	"compiler": {
-		"version": "0.8.28+commit.7893614a"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"name": "number",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number",
+						"type": "uint256"
+					}
+				],
+				"name": "setNumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/14_Payable.sol": "c"
+			"contracts/19_Delegatecall.sol": "c"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -32,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/14_Payable.sol": {
-			"keccak256": "0x5aaf45e927a90aea53af20827f0ee4807cf4ee61f8aca35fc08323858723aea4",
+		"contracts/19_Delegatecall.sol": {
+			"keccak256": "0x6085f9b53119dfb68a09f11e2660951b07d0f33d55fcb742779e38d3119b4c92",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7175e56a2cb65b649d1188cfe664ac149cf6d8a32cd561cd298fb80a9588fedb",
-				"dweb:/ipfs/QmVCg9Bp8dCWbgALp4K47fxTkeUUKc5jCa3wE7awRex8Fs"
+				"bzz-raw://ce61935f3a84fe434034b35438c417fd93f902568048a73b87472aae681f59e8",
+				"dweb:/ipfs/Qmap9CRHakSXF8oqrF1Ty8pm14zM6cK8zywD5UGZ9HFuwp"
 			]
 		}
 	},
