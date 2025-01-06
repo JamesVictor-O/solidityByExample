@@ -6,14 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "get",
+				"inputs": [],
+				"name": "getX",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -27,46 +21,27 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "myMap",
-				"outputs": [
-					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_x",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "remove",
+				"name": "setX",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "x",
+				"outputs": [
 					{
-						"internalType": "address",
-						"name": "_address",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "set",
-				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -83,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/5_Mapping.sol": "Mapping"
+			"contracts/20_CallingContracts.sol": "Callee"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -97,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/5_Mapping.sol": {
-			"keccak256": "0x54bd6f50bff1056e923af1e8ad0b437e610bc7d6770c8a09ed09408780496554",
+		"contracts/20_CallingContracts.sol": {
+			"keccak256": "0xb916ce9af0a44d0010fddfb057dd455acad24e98146f89162e3241fb727231ea",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6d9ed6cfc69faffb48b6a47ea39f6c11fcabb3f1ec49d09d4602fafa9246b79e",
-				"dweb:/ipfs/QmbHJv4QczJNbWznwd9pFqyENGGZbDPDWJNdYuqZfoax7h"
+				"bzz-raw://783353ea3ae7cd035f5928584d3824e04c6265132c6e74edaceab3659f719a76",
+				"dweb:/ipfs/QmPExtE7152tPKZzUNX58MtUd8AE5nHNWQ6toyp2PZszdS"
 			]
 		}
 	},

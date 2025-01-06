@@ -6,35 +6,16 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
-				"inputs": [
+				"inputs": [],
+				"name": "valueFromB",
+				"outputs": [
 					{
-						"indexed": false,
-						"internalType": "bool",
-						"name": "success",
-						"type": "bool"
-					},
-					{
-						"indexed": false,
-						"internalType": "bytes",
-						"name": "data",
-						"type": "bytes"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "Response",
-				"type": "event"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address payable",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "testCallFoo",
-				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -51,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/18_SendingEthers.sol": "Caller"
+			"contracts/20_CallingContracts.sol": "Caller"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -65,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/18_SendingEthers.sol": {
-			"keccak256": "0x1d05cf261c6f9406c64af81670d6b7afb7d06571563def41a59820a5816867a3",
+		"contracts/20_CallingContracts.sol": {
+			"keccak256": "0xb916ce9af0a44d0010fddfb057dd455acad24e98146f89162e3241fb727231ea",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a1b2c32a3efeb473f72162c0c2a93086fcff815b723c864786a8a0dc13126f37",
-				"dweb:/ipfs/QmNdXiTZvnYMxZTymJqFK9T4EFPLzCBkFezMNVB6CmJ2vH"
+				"bzz-raw://783353ea3ae7cd035f5928584d3824e04c6265132c6e74edaceab3659f719a76",
+				"dweb:/ipfs/QmPExtE7152tPKZzUNX58MtUd8AE5nHNWQ6toyp2PZszdS"
 			]
 		}
 	},

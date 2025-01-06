@@ -9,16 +9,21 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_addr",
+						"name": "_person",
 						"type": "address"
-					}
-				],
-				"name": "get",
-				"outputs": [
+					},
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_lockerNumber",
 						"type": "uint256"
+					}
+				],
+				"name": "isLockerLocked",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -30,14 +35,19 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					}
-				],
-				"name": "myMap",
-				"outputs": [
+					},
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"name": "nested",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -47,26 +57,23 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_addr",
+						"name": "_person",
 						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_lockerNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_isLocked",
+						"type": "bool"
 					}
 				],
-				"name": "remove",
+				"name": "setLocker",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_address",
-						"type": "address"
-					}
-				],
-				"name": "set",
-				"outputs": [],
-				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -83,7 +90,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/5_Mapping.sol": "Mapping"
+			"contracts/5_Mapping.sol": "NestedMapping"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
